@@ -1,0 +1,896 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* header section is here  */
+
+.class-header {
+    display: flex;
+    /* justify-content: space-evenly; */
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.class-head {
+    display: flex;
+    justify-content: space-around;
+    padding: 2px 12px;
+    margin: 2px 8px;
+}
+
+.class-head>p {
+    padding: 2px 12px;
+    margin: 2px 20px;
+    filter: invert(100%);
+    font-weight: 900;
+
+}
+
+.class-head .class-ul {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 50px;
+
+}
+
+.class-head .class-ul>li {
+    list-style: none;
+    padding: 2px 12px;
+    margin: 2px 10px;
+    filter: invert(100%);
+    text-align: center;
+}
+
+.class-header::before {
+    content: "";
+    background-color: rgba(10, 204, 26, 0.9);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+
+}
+
+/* <!-- navbar section is here that --> */
+
+
+.nav {
+    display: flex;
+    position: relative;
+}
+
+nav * {
+    color: whitesmoke;
+}
+
+nav p {
+    padding: 8px;
+}
+
+
+
+.class-navbar .class-h4 {
+    padding: 16px 12px;
+    margin: 2px 10px;
+
+}
+
+.class-nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    padding: 2px 12px;
+    margin: 2px 8px;
+}
+
+.class-navbar .class-nav {
+    position: absolute;
+    right: 50px;
+    padding: 2px 12px;
+    margin: 2px 8px;
+    top: -44px;
+
+}
+
+.class-navbar .class-nav li {
+    list-style: none;
+    padding: 2px 12px;
+    margin: 2px 10px;
+    cursor: pointer;
+}
+
+
+.class-navbar .class-nav li a {
+    text-decoration: none;
+    transition: 0.8s all;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.class-navbar .class-nav li a:hover {
+    color: rgba(10, 204, 26, 0.9);
+    width: 100%;
+    height: 2px;
+}
+
+.class-list::after {
+    content: '';
+    height: 100%;
+    width: 0%;
+    display: block;
+    background-color: rgba(10, 204, 26, 0.9);
+    height: 2px;
+    transform: all 1s;
+}
+
+.class-list:hover::after {
+    width: 100%;
+    transition: 1s;
+}
+
+/* <!-- home section is here that --> */
+
+.class-home {
+    position: relative;
+    /* top: 50px; */
+
+}
+
+.class-home::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6) url("../image/office6.jpg") no-repeat center center/cover;
+    background-blend-mode: darken;
+    position: absolute;
+    height: 119%;
+    width: 100%;
+    top: -66px;
+    z-index: -1;
+    /* opacity: 0.5; */
+}
+
+.class-financial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* top: 40px; */
+    width: auto;
+    margin: auto;
+    padding: 73px 80px;
+    text-align-last: center;
+}
+
+.class-home .button {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 20px 12px;
+    margin: 0px 20px;
+}
+
+.class-home .button .class-btn {
+    padding: 10px 34px;
+    margin: 2px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    transition: all 1.9s;
+    border: 0px solid rgba(10, 204, 26, 0.9);
+    color: whitesmoke;
+    border: 1px solid rgba(10, 204, 26, 0.9);
+    background-color: rgba(10, 204, 26, 0.9);
+
+}
+
+
+.class-home .button .class-btn:hover {
+    color: rgba(10, 204, 26, 0.9);
+    background-color: transparent;
+    border: 1px solid rgba(10, 204, 26, 0.9);
+}
+
+.class-home h3 {
+    padding: 2px 0px;
+    margin: 0px 0px;
+    color: rgba(10, 204, 26, 0.9);
+}
+
+
+/* class section is here that */
+.class-sec {
+    display: flex;
+    position: relative;
+}
+
+.class-sec * {
+    color: whitesmoke;
+}
+
+.class-sec::before {
+    content: "";
+    background-color: rgba(10, 204, 26, 0.9);
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+}
+
+.div-sec {
+    padding: 20px 12px;
+    margin: 4px 12px;
+
+}
+
+.div-sec button {
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    padding: 15px 30px;
+    margin: 4px 12px;
+    border-radius: 16px;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    transition: all 0.9s;
+}
+
+.div-sec button:hover {
+    background-color: whitesmoke;
+    border: 1px solid rgba(10, 204, 26, 0.9);
+    color: rgba(10, 204, 26, 0.9);
+}
+
+.class-heading {
+    position: relative;
+    top: 25px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.class-heading p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.class-heading span {
+    color: rgba(10, 204, 26, 0.9);
+}
+
+.class-navbar h4 span {
+    color: rgba(10, 204, 26, 0.9);
+}
+
+.class-navbar h4 {
+    color: whitesmoke;
+}
+
+
+.section-images {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    top: 80px;
+    text-align: center;
+    align-items: center;
+}
+
+.section-images img {
+    height: 120px;
+    width: 200px;
+    border-radius: 16px;
+    padding-top: 0px;
+    position: relative;
+    top: 5px;
+}
+
+.images {
+    width: 320px;
+    background-color: #f1f1f1;
+
+}
+
+
+.images h5 {
+    font-size: 1.5rem;
+    padding: 10px 8px;
+}
+
+
+.images p {
+    font-size: 1rem;
+    padding: 0px 8px;
+}
+
+.images button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 10px 8px;
+    color: whitesmoke;
+    background-color: rgba(10, 204, 26, 0.9);
+    border-radius: 10px;
+    border: 1px solid rgba(10, 204, 26, 0.9);
+    cursor: pointer;
+    transition: all 1.2s;
+}
+
+.images button:hover {
+
+    color: rgba(10, 204, 26, 0.9);
+    background-color: whitesmoke;
+
+}
+
+.form {
+    position: relative;
+    top: 120px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.form p {
+    font-size: 1.2rem;
+}
+
+.form span {
+    color: rgba(10, 204, 26, 0.9);
+}
+
+
+.class-form {
+    margin: auto;
+    text-align: center;
+    border: 2px solid rgba(10, 204, 26, 0.9);
+    position: relative;
+    top: 150px;
+    background-color: rgba(10, 204, 26, 0.9);
+}
+
+form input {
+    padding: 12px 8px;
+    margin: 16px 8px;
+    border-radius: 18px;
+    width: 420px;
+    border: 2px solid rgba(10, 204, 26, 0.9);
+    outline: none;
+}
+
+form select {
+    padding: 12px 8px;
+    margin: 16px 8px;
+    border-radius: 18px;
+    width: 420px;
+    border: 2px solid rgba(10, 204, 26, 0.9);
+    outline: none;
+    cursor: pointer;
+
+}
+
+form button {
+    padding: 12px 8px;
+    margin: 16px 8px;
+    border-radius: 18px;
+    width: 200px;
+    border: 2px solid rgba(10, 204, 26, 0.9);
+    cursor: pointer;
+    transition: all 0.9s;
+
+}
+
+form textarea {
+    padding: 12px 8px;
+    margin: 16px 8px;
+    border-radius: 18px;
+    width: 1300px;
+    height: 100px;
+    border: 2px solid rgba(10, 204, 26, 0.9);
+    outline: none;
+}
+
+form label {
+    position: relative;
+    top: -12px;
+
+}
+
+form label span {
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+
+.classform .submit:hover {
+    border: 2px solid whitesmoke;
+    background-color: none;
+}
+
+.class-guide {
+    position: relative;
+    top: 200px;
+
+}
+
+.class-guide::before {
+    content: "";
+    background-color: #f1f1f1;
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.class-need1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 4px 20px;
+    margin: 2px 20px;
+
+}
+
+.class-need1 h2 span {
+    color: rgba(10, 204, 26, 0.9);
+}
+
+.class-need1 h1 {
+    font-size: 2rem;
+
+
+}
+
+.class-need1 h2 {
+    font-size: 2rem;
+    color: black;
+}
+
+.class-need {
+    display: flex;
+    justify-content: center;
+    padding: 4px 20px;
+    margin: 2px 20px;
+}
+
+.social {
+    border: 4px solid whitesmoke;
+
+}
+
+.class-need button {
+    font-weight: 800;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 8px 18px;
+    margin: 20px 20px;
+    border-radius: 20px;
+    background-color: rgba(10, 204, 26, 0.9);
+    border: 1px solid whitesmoke;
+    transition: 1.2s all;
+}
+
+.class-need button:hover {
+    background-color: whitesmoke;
+    color: rgba(10, 204, 26, 0.9);
+    border: 1px solid rgba(10, 204, 26, 0.9);
+}
+
+#business {
+    text-align: center;
+    top: 270px;
+    position: relative;
+    background-color: rgba(10, 204, 26, 0.9);
+}
+
+#business span {
+    color: whitesmoke;
+}
+
+#business h2 {
+    font-size: 2.8rem;
+    padding: 6px 0px;
+    margin: 4px 0px;
+
+}
+
+#business h4 {
+    font-size: 1em;
+
+}
+
+#business button {
+    padding: 8px 20px;
+    margin: 12px;
+    border: 1px solid rgba(10, 204, 26, 0.9);
+    background-color: rgba(10, 204, 26, 0.9);
+    border-radius: 25px;
+    color: whitesmoke;
+    font-weight: 800;
+    transition: 1.5s all;
+    cursor: pointer;
+    box-shadow: 2px 3px 4px 2px black;
+}
+
+#business button:hover {
+    border: 1px solid rgba(10, 204, 26, 0.9);
+    background-color: whitesmoke;
+    border-radius: 25px;
+    color: rgba(10, 204, 26, 0.9);
+    box-shadow: none;
+
+}
+
+#business h6 {
+    padding: 4px 4px;
+    font-size: 0.99rem;
+}
+
+.accordion {
+    position: relative;
+    top: 350px;
+}
+
+.class-footer {
+    position: relative;
+    top: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+}
+
+.class-footer::before {
+
+    content: "";
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+}
+
+.class-foot {
+    width: 185px;
+}
+
+.class-foot h5 {
+    font-size: 1.2rem;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 2px solid rgba(10, 204, 26, 0.9);
+    width: 120px;
+}
+
+
+.class-foot .unorder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.class-footer span {
+    color: rgba(10, 204, 26, 0.9);
+}
+
+
+.class-foot .unorder-list li {
+    list-style: none;
+    padding: 4px 4px;
+    margin: 3px 4px;
+}
+
+
+.class-foot .unorder li {
+    list-style: none;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    /* border: 2px solid rgba(10, 204, 26, 0.9); */
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.class-foot p a {
+    text-decoration: none;
+}
+
+.burger {
+    position: absolute;
+    top: 50px;
+    right: 2%;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+}
+
+
+.burger-menu {
+    height: 3px;
+    width: 30px;
+    background-color: whitesmoke;
+    /* display: block; */
+    margin: 3px 1px;
+    border-radius: 8px;
+
+}
+
+.p1 {
+    padding: 2px 4px;
+    margin: 2px;
+}
+.unorder-list li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media only screen and (min-width: 70px) and (max-width:1300px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .how{
+        display: none;
+    }
+
+    .class-head {
+        justify-content: space-evenly;
+        padding: 2px 0px;
+        margin: 2px 2px;
+    }
+
+
+    form textarea {
+        width: auto;
+        height: auto;
+    }
+
+    .class-sec {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .div-sec button {
+        position: relative;
+        top: -32px;
+        /* right: 15px; */
+        padding: 8px 12px;
+        margin: 4px 4px;
+        /* border-radius: 16px; */
+        /* background-color: transparent; */
+        /* border: 2px solid whitesmoke; */
+        cursor: pointer;
+    }
+
+    .class-need {
+        flex-wrap: wrap;
+    }
+
+    .images {
+        width: auto;
+        margin: 20px;
+    }
+
+    form input {
+
+        width: auto;
+    }
+
+    .class-footer {
+        justify-content: space-between;
+        padding: 5px 25px;
+        margin: 60px 0px;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    .class-foot h2 a {
+        text-decoration: none;
+    }
+
+    .class-home .button {
+        text-align: center;
+
+        padding: 15px 0px;
+        margin: auto;
+    }
+
+
+    nav p {
+        padding: 0px;
+    }
+
+    .class-home .button .class-btn {
+        padding: 1px 8px;
+        margin: 2px 4px;
+
+    }
+
+    .class-home .button {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .class-head>p {
+        padding: 2px 1px;
+        margin: 2px 0px;
+
+    }
+
+    .class-head .class-ul {
+        display: none;
+        padding: 0px 0px;
+        margin: 0px 0px;
+    }
+
+    .class-foot {
+        width: 195px;
+        margin-top: 50px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    /* .class-navbar .class-nav {
+        display: none;
+        background-color: #2a2a2a;
+        height: 50vh;
+        width: 100%;
+        border-top: 1px solid black;
+        padding-top: 20px;
+        margin-top: 35px;
+        z-index: 4;
+        left: -8px;
+        transition: all 0.9s;
+        position: fixed;
+    } */
+
+    .class-navbar .class-nav li {
+        padding: 15px 20px;
+        /* width: 100%; */
+    }
+/* 
+    .class-navbar .class-nav li:hover {
+        border-bottom: 2px solid rgba(10, 204, 26, 0.9);
+    } */
+
+
+    .show {
+        display: block;
+    }
+
+    .class-home::before {
+
+        top: -64px;
+        z-index: -1;
+        /* opacity: 0.5; */
+    }
+
+    .class-navbar .class-h4 {
+        padding: 16px 5px;
+        margin: 2px 0px;
+    }
+
+    /* .burger {
+        display: block;
+        position: fixed;
+        z-index: 9;
+        border: 2px solid #2a2a2a;
+        background-color: rgba(10, 204, 26, 0.9);
+        border-radius: 3px;
+    } */
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width:800px) {
+    .shown {
+        display: block;
+    }
+
+    .burger {
+        display: block;
+        position: fixed;
+        z-index: 9;
+        border: 2px solid #2a2a2a;
+        background-color: rgba(10, 204, 26, 0.9);
+        border-radius: 6px;
+        transition: all 2s linear;
+    }
+
+    
+    .class-navbar .class-nav {
+        display: none;
+        background-color: #2a2a2a;
+        height: 100vh;
+        width: 60%;
+        border-top: 1px solid black;
+        padding-top: 12px;
+        margin-top: 35px;
+        z-index: 4;
+        right: -8px;
+        position: fixed;
+        transition: all 2s linear;
+        box-shadow: -4px 2px 3px whitesmoke;
+color: transparent;
+    } 
+
+    .class-financial {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* top: 40px; */
+        width: auto;
+        margin: auto;
+        padding: 9px 15px;
+        text-align-last: center;
+    }
+
+    .class-sec {
+        display: flex;
+        position: relative;
+        top: -23px;
+    }
+
+    .class-footer {
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:530px) {
+    .class-sec {
+        top: -10px;
+    }
+
+    .class-footer {
+        justify-content: center;
+    }
+
+
+}
+
+@media only screen and (max-width:300px) {
+    .class-sec {
+        top: 0px;
+    }
+
+}
